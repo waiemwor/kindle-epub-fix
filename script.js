@@ -193,7 +193,7 @@ class EPUBBook {
       metadata.appendChild(writingModeMeta);
 
       console.log('Added: <meta name="primary-writing-mode" content="horizontal-rl" />');
-      this.fixedProblems.push(`Added: <meta name="primary-writing-mode" content="horizontal-rl" />`);
+      this.fixedProblems.push(`Added: primary-writing-mode : "horizontal-rl"`);
     } else {
       const oldVal = writingModeMeta.getAttribute("content");
       writingModeMeta.setAttribute("content", "horizontal-rl");
